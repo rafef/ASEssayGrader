@@ -1,0 +1,7 @@
+app.post("/WordCount", function(request, response) {
+	var text = request.body.essay;
+	var number_of_words = 0;
+	var split_text = text.split(" ");
+	for (var i = 0; i < split_text.length; i++) {
+		number_of_words = number_of_words +  i
+response.end(number_of_words);
