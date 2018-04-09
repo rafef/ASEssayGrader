@@ -1,13 +1,15 @@
 var http = require('http');
 
-//create a server object:
-http.createServer(function (req, res) {
-  //create text box
-  //create submit button
-  
-  
-}).listen(8080); //the server object listens on port 8080
+function onRequest(request, response){
+	console.log("A user made a request" + request.url);
+	response.writeHead(200, {"Context-Type": "text/plain"})
+	response.write("Here is your generated grade")
+	//response.write(grade) //grade variable will be created in html
+	response.end();
+}	
 
 
-//function for grade evaluation
+
+http.createServer(onRequest).listen(8080);
+console.log("Server is now running...")
 
