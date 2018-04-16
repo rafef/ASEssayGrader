@@ -1,0 +1,6 @@
+var amstuds_good_word_list = [compelling, striking, struck, compelled, compells, slavery, women, feminism, woman, african, frontier,
+                         coates, racism, rights, civil, black, King,X, patriarchy, gender, role, roles, washington, suffrage, amendment,  
+                         protest, integration, Jim, Crow, Laws, law, progressivism, progressive, socialist, juxtaposition]
+
+
+var amstuds_bad_word_list = [              
